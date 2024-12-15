@@ -1,5 +1,4 @@
-streamlit
-pandas
-numpy
-tensorflow
-PIL
+streamlit==1.25.0
+tensorflow==2.14.0
+numpy==1.23.5
+Pillow==9.3.0
