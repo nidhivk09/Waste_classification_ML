@@ -14,7 +14,7 @@ LABELS = [
 ]
 
 # Paths
-DATASET_PATH = "dataset/"  # Ensure your dataset is here
+DATASET_PATH = "dataset"  # Ensure your dataset is here
 MODEL_SAVE_PATH = "waste_classifier_model.h5"
 
 # Function to train the model
