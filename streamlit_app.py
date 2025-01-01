@@ -4,10 +4,15 @@ import streamlit as st
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 from PIL import Image
-import matplotlib.pyplot as plt
-from train_model import LABELS, MODEL_PATH
+#import matplotlib.pyplot as plt
+#from train_model import LABELS, MODEL_PATH
 import time
 
+LABELS = [
+    "battery", "biological", "brown-glass", "cardboard", "clothes",
+    "green-glass", "metal", "paper", "plastic", "shoes", "trash", "white-glass"
+]
+MODEL_PATH="/Users/nidhikulkarni/PycharmProjects/Waste_classification_ML/waste_classifier_model_cnn.h5"
 # Function to classify uploaded images
 def classify_image(image, model):
     img = image.resize((128, 128))  # Resize to match model input
